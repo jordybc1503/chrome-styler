@@ -6,7 +6,9 @@
   "permissions": ["scripting"],
   "content_scripts": [
     {
-      "matches": ["https://www.freecodecamp.org/*"],
+      "matches": [
+        "https://www.freecodecamp.org/*",
+        "https://play.google.com/books/*" ],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
