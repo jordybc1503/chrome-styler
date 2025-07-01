@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "FreeCodeCamp Theme Changer",
+  "version": "1.0",
+  "description": "Change background color on FreeCodeCamp pages.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.freecodecamp.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
